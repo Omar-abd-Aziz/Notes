@@ -1,0 +1,810 @@
+:root{
+  --main-color: #0078B7;
+  --main-color2: darkred;
+  --main-color3: green;
+}
+
+
+body{
+  background: #E5E5E5;
+}
+
+
+
+#main {
+  width: 90%;
+  margin: 20px auto 5px;
+  padding: 10px;
+  background: var(--main-color);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+#main #lab
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#main #in {
+  width: 75%;
+  height: 17px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 10px 4px;
+  resize: none;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+
+.scroll::-webkit-scrollbar {
+   display: none;
+}
+
+
+#main #btn1 {
+  width: 3rem;
+  border: none;
+  border-radius: 20px;
+  margin: 0px 5px;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+#main #btn2 {
+  width: 5rem;
+  border: none;
+  border-radius: 20px;
+  margin: 0px 0px 0px 8px;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+
+#settings{
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  top: 90%;
+  left: 4%;
+  cursor: pointer;
+  user-select: none;
+  padding: 5px;
+  z-index: 1;
+  border: 2px solid black;
+}
+
+#setting-img{
+  width: 100%;
+  height: 100%;
+  background: url(img/setting.png);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+
+
+
+
+hr{
+  width: 90%;
+  margin: 0px auto 15px;
+  user-select: none;
+}
+
+
+#d1{
+  width: 84%;
+  margin: 10px auto;
+  padding: 0px 25px 0px 25px;
+  background: var(--main-color);
+  text-align: center;
+  border-radius: 20px;
+  color: whitesmoke;
+  position: relative;
+  font-size: 20px;
+  overflow: hidden;
+  
+  overflow-wrap: anywhere;
+}
+
+
+#text{
+  padding: 8px 8px;
+  margin: 25px 10px 25px 10px;
+  background: white;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+
+#d1 #clear {
+  width: 25px;
+  height: 25px;
+  background: url(img/delet-img.jpg);
+  background-size: cover;
+  border-radius: 20px;
+  position: absolute;
+  left: 95.5%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid white;
+  color: white;
+  padding: 0 5px 0px 5.5px;
+  user-select: none;
+}
+
+
+
+@media (min-width: 600px) {
+  
+  #d1 #clear{
+    position: absolute;
+    left: calc(98% - 3px);
+  }
+  
+  #d1{
+    padding: 0px 30px 0px 28px;
+  }
+  
+  
+  #d1 .ooo{
+    position: absolute;
+    left: calc(2% + 3px);
+  }
+  
+  
+  
+  #d1 #date{
+    width: 110px;
+    height: 5px;
+    font-size: 10px;
+    color: #E5E5E5;
+    position: absolute;
+    left: 77px;
+    bottom: -5px;
+    font-weight: bold;
+  }
+
+  
+  
+}
+
+
+/* larg view */
+
+@media (min-width: 1300px) {
+  
+  #d1 #clear{
+    position: absolute;
+    left: calc(99% - 3px);
+  }
+  
+
+  
+  
+  #d1 .ooo{
+    position: absolute;
+    left: calc(1% + 3px);
+  }
+
+
+  /*  */
+
+
+
+  #main
+  {
+    background: #674A40;
+    max-width: 70%;
+    margin: auto;
+  }
+
+  #main #in
+  {
+    font-size: 23px;
+    padding: 10px 20px;
+  }
+
+  #main #lab
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+  }
+
+
+  #main #btn1
+  {
+    font-size: 20px;
+    width: 4rem;
+  }
+
+  #img0
+  {
+    max-width: 40%;
+
+  }
+
+  #main #btn2
+  {
+    font-size: 20px;
+  }
+
+  hr
+  {
+    max-width: 70%;
+  }
+
+  #noon
+  {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  #d1
+  {
+    padding: 0px 30px 0px 28px;
+    margin: 20px auto;
+    background: #674A40;
+  }
+  
+  #d1 #text
+  {
+    font-family: sans-serif;
+    font-size: 30px;
+    padding: 17px 0px;
+  }
+
+  body
+  {
+    background: rgb(0, 0, 0);
+  }
+
+
+  :root
+  {
+    --main-color: black;
+  }
+
+  /*  */
+  
+  
+}
+
+
+/* end of larg view */
+
+
+#btnup {
+  border: none;
+  padding: 5px;
+  border-radius: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  position: fixed;
+  right: 1%;
+  top: 90%;
+  display: none;
+  z-index: 1;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+#img0{
+  width: 90%;
+  border-radius: 20px;
+  border: 2px solid white;
+  margin: -20px 5px 20px 5px;
+  user-select: none;
+  user-zoom: none;
+}
+
+
+
+
+
+
+#in2[type="file"]{
+  display: none;
+}
+
+
+
+#lab{
+  background: var(--main-color3);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  margin: 0px 10px;
+  font-size: 15px;
+  width: 50px;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*start style for btn to check box*/
+
+.ooo{
+  background: transparent;
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 4%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+/*end btn check box*/
+
+
+
+
+
+#date{
+  width: 110px;
+  height: 5px;
+  font-size: 10px;
+  color: #E5E5E5;
+  position: absolute;
+  left: 75px;
+  bottom: -5px;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#area-text{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: darkred;
+  font-size: 20px;
+  background: #EEEEEE;
+  
+  display: none;
+}
+
+
+
+
+#text-int{
+  border: 2px solid #E1B115;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+  resize: none;
+  border-radius: 20px;
+}
+
+
+
+
+#add-area{
+  border: none;
+  position: absolute;
+  top: 6%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  color: #E1B115;
+  background: #EEEEEE;
+  font-weight: 900;
+  font-size: 17px;
+  
+}
+
+
+
+#back-area{
+  border: none;
+  position: absolute;
+  top: 5.5%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  color: #E1B115;
+  background: #EEEEEE;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+
+
+#back-area span{
+  font-size: 23px;
+}
+
+
+
+
+
+
+
+#btn-copy{
+  width: 30px;
+  height: 15px;
+  border: none;
+  border-radius: 20px;
+  background: red;
+  text-align: start !important;
+  position: absolute;
+  left: 50px;
+  top: 12px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+
+
+#btn-copy span{
+  text-align: center;
+  width: 25px;
+  font-size: 10px  !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+#btn-edit{
+  width: 30px;
+  height: 15px;
+  border: none;
+  border-radius: 20px;
+  background: green;
+  text-align: start !important;
+  position: absolute;
+  left: 90px;
+  top: 12px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+
+
+
+#btn-edit span{
+  text-align: center;
+  width: 25px;
+  font-size: 10px  !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+/*edit style*/
+
+
+
+
+#edit-text{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: darkred;
+  font-size: 20px;
+  background: #EEEEEE;
+  
+  display: none;
+}
+
+
+
+
+#text-edit{
+  border: 2px solid #E1B115;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 200px;
+  margin: auto;
+  padding: 20px;
+  resize: none;
+  border-radius: 20px;
+}
+
+
+
+
+#add-edit{
+  border: none;
+  position: absolute;
+  top: 6%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  color: #E1B115;
+  background: #EEEEEE;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+
+
+#back-edit{
+  border: none;
+  position: absolute;
+  top: 5.5%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  color: #E1B115;
+  background: #EEEEEE;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+
+
+#back-edit span{
+  font-size: 23px;
+}
+
+
+
+/*end of edit*/
+
+
+
+
+
+/*start setting*/
+
+#setting-page{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  font-size: 20px;
+  background: #EEEEEE;
+  display: none;
+}
+
+
+#setting-dad{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 330px;
+  height: 500px;
+  z-index: 1;
+  font-size: 20px;
+  background: var(--main-color);
+  border-radius: 20px;
+}
+
+#setting-done{
+  width: 60px;
+  height: 20px;
+  background: white;
+  text-align: center;
+  padding: 2px 5px 5px;
+  border-radius: 20px;
+  user-select: none;
+  cursor: pointer;
+  color: var(--main-color);
+  position: absolute;
+  top: 5%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+#setting-d1
+{
+  width: 80%;
+  height: 30px;
+  background: red;
+  margin: 50px auto 5px;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  padding: 5px;
+}
+
+
+
+#setting-d1 #span-1
+{
+  position: relative;
+  top: 10%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+#setting-d1 #span-2
+{
+  width: 20px;
+  height: 20px;
+  background: url(/img/gu.svg);
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: -25%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+#setting-d2
+{
+  width: 80%;
+  height: 30px;
+  background: red;
+  margin: 5px auto;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  padding: 5px;
+}
+
+
+
+#setting-d2 #span-1
+{
+  position: relative;
+  top: 10%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+#setting-d2 #span-2
+{
+  width: 20px;
+  height: 20px;
+  background: url(/img/gu.svg);
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  top: -25%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*end setting*/
+
+
+
+#btn1,#btn2, #lab, #btn-edit, #btn-copy{
+  background: white;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+#lab{
+  margin: 0 0 0 5px;
+}
+
+ #btn-edit span{
+   color: var(--main-color);
+   font-weight: bold;
+ }
+ 
+  #btn-copy span {
+    color: var(--main-color);
+    font-weight: bold;
+  }

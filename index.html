@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes</title>
+  
+  <link rel="stylesheet" href="style.css" type="text/css" madia="all">
+
+  <link rel="shortcut icon" href="./1.png">
+</head>
+
+<body>
+  
+  
+  <main id="main">
+    
+    <input dir="auto" type="text" id="in" placeholder="Enter text..." class="scroll">
+    
+    <input type="file" accept="imager/*" id="in2" class="in2">
+    
+    <button id="btn2">B-text</button>
+    
+    <label for="in2" id="lab">Img</label>
+    
+    <button id="btn1" type="submit">Add</button>
+    
+  </main>
+
+  
+  
+  
+  <br>
+  <hr>
+  
+  <div id="noon">
+    
+    
+    
+  </div>
+  
+  <button id="btnup">⬆️</button>
+  
+  
+  
+  <!--to add big text!-->
+  
+  <div id="area-text">
+    <textarea dir=auto id="text-int" class="scroll"></textarea>
+    
+    <button id="back-area">
+      <span>&#60;</span> Back
+    </button>
+    
+    <button id="add-area">Done</button>
+  </div>
+  
+  <!--end of big text!-->
+  
+  
+  <!--to edit!-->
+  
+    <div id="edit-text">
+      <textarea dir=auto id="text-edit" class="scroll"></textarea>
+  
+      <button id="back-edit" onclick="backedit()">
+        <span>&#60;</span> Back
+      </button>
+  
+      <button id="add-edit" onclick="addedit()">Done</button>
+    </div>
+  
+  <!-- end of edit!-->
+  
+  <!-- setting page!-->
+  
+    
+  
+  
+  <div id="settings" onclick="showSett()">
+    <div id="setting-img">
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <div id="setting-page">
+    
+    <div id="setting-dad">
+      
+      <div id="setting-done" onclick="hideSett()">Done</div>
+      
+      
+      
+      <div id="setting-d1">
+        <span id="span-1">Date</span>
+        <div id="span-2" class="dateBtn"></div>
+      </div>
+      
+      <div id="setting-d2">
+        <span id="span-1">Big-text</span>
+        <div id="span-2" class="Btext"></div>
+      </div>
+      
+      <div id="setting-d2">
+        <span id="span-1">Img btn</span>
+        <div id="span-2" class="imgBtn"></div>
+      </div>
+      
+      
+      <div id="setting-d2">
+        <span id="span-1">To-do-btn</span>
+        <div id="span-2" class="toDoBtn"></div>
+      </div>
+      
+      
+      <div id="setting-d2">
+         <span id="span-1">Copy-btn</span>
+         <div id="span-2" class="copyBtn"></div>
+      </div>
+      
+      
+      <div id="setting-d2">
+        <span id="span-1">Edit-btn</span>
+        <div id="span-2" class="editBtn"></div>
+      </div>
+      
+      
+      <div id="setting-d2">
+        <span id="span-1">Delete-btn</span>
+        <div id="span-2" class="deletBtn"></div>
+      </div>
+      
+      
+      
+      
+    </div>
+    
+  </div>
+  
+  <!-- end of setting!-->
+  
+  
+
+<script src="main.js"></script>
+</body>
+
+</html>
