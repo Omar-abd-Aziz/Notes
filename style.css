@@ -164,7 +164,7 @@ hr{
   }
   
   
-  #d1 .ooo{
+  #d1 .isDoneBtnForNote{
     position: absolute;
     left: calc(2% + 3px);
   }
@@ -199,7 +199,7 @@ hr{
 
   
   
-  #d1 .ooo{
+  #d1 .isDoneBtnForNote{
     position: absolute;
     left: calc(1% + 3px);
   }
@@ -366,7 +366,7 @@ hr{
 
 /*start style for btn to check box*/
 
-.ooo{
+.isDoneBtnForNote{
   background: transparent;
   background-size: cover;
   width: 22px;

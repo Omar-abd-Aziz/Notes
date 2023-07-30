@@ -16,11 +16,11 @@
   
   <main id="main">
     
-    <input dir="auto" type="text" id="in" placeholder="Enter text..." class="scroll">
+    <input autocomplete="off" dir="auto" type="text" id="in" placeholder="Enter text..." class="scroll">
     
-    <input type="file" accept="imager/*" id="in2" class="in2">
+    <input type="file" accept="image/*" id="in2" class="in2">
     
-    <button id="btn2">B-text</button>
+    <button class="bigTextBtn" id="btn2">B-text</button>
     
     <label for="in2" id="lab">Img</label>
     
@@ -46,40 +46,20 @@
   
   <!--to add big text!-->
   
-  <div id="area-text">
-    <textarea dir=auto id="text-int" class="scroll"></textarea>
-    
-    <button id="back-area">
-      <span>&#60;</span> Back
-    </button>
-    
-    <button id="add-area">Done</button>
-  </div>
+
   
   <!--end of big text!-->
   
   
-  <!--to edit!-->
-  
-    <div id="edit-text">
-      <textarea dir=auto id="text-edit" class="scroll"></textarea>
-  
-      <button id="back-edit" onclick="backedit()">
-        <span>&#60;</span> Back
-      </button>
-  
-      <button id="add-edit" onclick="addedit()">Done</button>
-    </div>
-  
-  <!-- end of edit!-->
+
   
   <!-- setting page!-->
   
     
   
   
-  <div id="settings" onclick="showSett()">
-    <div id="setting-img">
+  <div id="settings">
+    <div id="setting-img"  class="settingsPageBtnShow">
       
     </div>
   </div>
@@ -92,51 +72,57 @@
     
     <div id="setting-dad">
       
-      <div id="setting-done" onclick="hideSett()">Done</div>
+      <div id="setting-done" class="settingsPageBtnHidde" >Done</div>
       
       
       
       <div id="setting-d1">
         <span id="span-1">Date</span>
-        <div id="span-2" class="dateBtn"></div>
+        <div id="span-2" data-btn="date" data-value="true" class="settingBtn dateBtn"></div>
       </div>
       
       <div id="setting-d2">
         <span id="span-1">Big-text</span>
-        <div id="span-2" class="Btext"></div>
+        <div id="span-2" data-btn="bigText" data-value="true" class="settingBtn Btext"></div>
       </div>
       
       <div id="setting-d2">
         <span id="span-1">Img btn</span>
-        <div id="span-2" class="imgBtn"></div>
+        <div id="span-2" data-btn="img" data-value="true" class="settingBtn imgBtn"></div>
       </div>
       
       
       <div id="setting-d2">
         <span id="span-1">To-do-btn</span>
-        <div id="span-2" class="toDoBtn"></div>
+        <div id="span-2" data-btn="toDo" data-value="true" class="settingBtn toDoBtn"></div>
       </div>
       
       
       <div id="setting-d2">
          <span id="span-1">Copy-btn</span>
-         <div id="span-2" class="copyBtn"></div>
+         <div id="span-2" data-btn="copy" data-value="true" class="settingBtn copyBtn"></div>
       </div>
       
       
       <div id="setting-d2">
         <span id="span-1">Edit-btn</span>
-        <div id="span-2" class="editBtn"></div>
+        <div id="span-2" data-btn="edit" data-value="true" class="settingBtn editBtn"></div>
       </div>
       
       
       <div id="setting-d2">
         <span id="span-1">Delete-btn</span>
-        <div id="span-2" class="deletBtn"></div>
+        <div id="span-2" data-btn="delet" data-value="true" class="settingBtn deletBtn"></div>
       </div>
       
       
-      
+      <div id="setting-d2"  class="importAllNotesJson" style="text-align: center; cursor: pointer;">
+        <span id="span-1" class="importAllNotesJson" >Import Json</span>
+      </div>
+
+      <div id="setting-d2" class="exportAllNotesJson" style="text-align: center; cursor: pointer;">
+        <span id="span-1" class="exportAllNotesJson"  >Export Json</span>
+      </div>
       
     </div>
     
@@ -146,7 +132,9 @@
   
   
 
-<script src="main.js"></script>
+<script src="main.js" type="module"></script>
+<script src="./cdn/dexie.js"></script>
+<script src="./cdn/swalCdn.js"></script>
 </body>
 
 </html>
