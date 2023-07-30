@@ -237,7 +237,7 @@ document.querySelectorAll(".settingBtn").forEach((e)=>{
 
   if(e.dataset.value==true||e.dataset.value=="true"){
 
-    e.style=`background: url(/img/gu.svg); background-size: cover;`;
+    e.style=`background: url(./img/gu.svg); background-size: cover;`;
     
   } else {
 
@@ -372,7 +372,7 @@ window.onclick=async (e)=>{
 
       e.target.dataset.value=true;
       AllSettingBtns[btn]=true;
-      e.target.style=`background: url(/img/gu.svg); background-size: cover;`;
+      e.target.style=`background: url(./img/gu.svg); background-size: cover;`;
       localStorage.setItem("AllSettingBtns",JSON.stringify(AllSettingBtns));
 
     };
